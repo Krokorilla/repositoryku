@@ -1,0 +1,64 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Patrick Hand', cursive;
+    color: whitesmoke;
+    background-image: url(jp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(51, 0, 51);
+    justify-content: space-around;
+    padding: 30px 0;
+}
+nav .logo {
+    font-size: 1.5em;
+}
+nav ul {
+    display: flex;
+    color: whitesmoke;
+    list-style: none;
+    width: 25%;
+    justify-content: space-evenly;
+}
+nav ul li a {
+    color: whitesmoke;
+    text-decoration: dashed;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1em;
+}
+nav ul li a:hover {
+    color: rgb(63, 63, 63);
+}
+
+.toggle {
+    display: flex;
+    flex-direction: column;
+    height: 15px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: whitesmoke;
+}
+/*Responsif */
+@media screen and (max-width: 768px){
+    nav ul{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    nav ul{
+        width: none;
+    }
+}
